@@ -49,6 +49,12 @@ const config: Config = {
   ],
 
   themeConfig: {
+    colorMode: {
+      defaultMode: "dark",
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
+
     navbar: {
       title: "Wandered2LA",
       logo: {
@@ -65,8 +71,9 @@ const config: Config = {
         { to: "/blog", label: "Archive", position: "left" },
         {
           href: "https://github.com/WanderedToLa",
-          label: "GitHub",
           position: "right",
+          className: "navbar-github-link",
+          "aria-label": "GitHub repository",
         },
       ],
     },
