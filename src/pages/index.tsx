@@ -1,34 +1,27 @@
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 
-import styles from "./index.module.css";
-
-function HomepageHeader() {
-  return (
-    <header>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          dddd
-        </Heading>
-        <p className="hero__subtitle">dddd</p>
-      </div>
-    </header>
-  );
-}
-
-export default function Home(): JSX.Element {
+export default function Home() {
   const { siteConfig } = useDocusaurusContext();
 
   return (
     <Layout title={`${siteConfig.title}`} description={`${siteConfig.tagline}`}>
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      <div className="layoutContainer">
+        <div className="container">
+          <header>
+            <Heading as="h1" className="main-title">
+              안녕하세요!👋
+              <br />
+              저는 김우석입니다.
+            </Heading>
+            <p className="main-description">~~~입니다.</p>
+          </header>
+          <main>
+            <h2>Recent Posts</h2>
+          </main>
+        </div>
+      </div>
     </Layout>
   );
 }
