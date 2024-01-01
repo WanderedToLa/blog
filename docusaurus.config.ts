@@ -3,8 +3,9 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "WanderedToLA Blog",
+  title: "Wandered2LA",
   tagline: "Study log Archive",
+  titleDelimiter: "•",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
