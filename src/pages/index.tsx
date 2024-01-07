@@ -1,6 +1,7 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
+import Link from "@docusaurus/Link";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -21,15 +22,7 @@ export default function Home() {
             </p>
           </header>
           <main className="main">
-            <h2 className="post-title">Recent Posts</h2>
-            <ul className="post-list-container">
-              <li>1. ㅇㅁㄹㅇㅇㄹ</li>
-              <li>1. ㅇㅁㄹㅇㅇㄹ</li>
-              <li>1. ㅇㅁㄹㅇㅇㄹ</li>
-              <li>1. ㅇㅁㄹㅇㅇㄹ</li>
-              <li>1. ㅇㅁㄹㅇㅇㄹ</li>
-              <li>1. ㅇㅁㄹㅇㅇㄹ</li>
-            </ul>
+            <Link to={'./blog'} className="post-title">BLOG 바로가기</Link>
           </main>
         </div>
       </div>
