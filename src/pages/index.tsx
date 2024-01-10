@@ -22,7 +22,8 @@ export default function Home() {
             </p>
           </header>
           <main className="main">
-            <Link to={'./blog'} className="post-title">BLOG 바로가기</Link>
+            <h2>Recent Posts</h2>
+            <Link to={"./blog"}>- dddddd</Link>
           </main>
         </div>
       </div>
