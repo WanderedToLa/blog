@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # WSL2 + VSCode 기반 리눅스 개발환경 설정
