@@ -1,18 +1,28 @@
 .layout-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem;
+}
+
+.container {
+  width: 50%;
+  padding: 2.5rem;
+}
+
+.right-container {
+  background-color: pink;
+  width: 50%;
+  min-height: 100vh;
+
 }
 
 .main-title {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 0.7em;
 }
 
 .main-description {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.4;
 }
@@ -22,7 +32,7 @@
 }
 
 .post-title {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
@@ -33,6 +43,6 @@
 }
 
 .post-list-container li {
-  font-size: 1.7rem;
+  font-size: 1rem;
   padding: 0.6rem;
 }

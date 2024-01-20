@@ -23,7 +23,7 @@ export default function Home() {
               <br />
               좋은 개발경험이 뒤따라야 한다고 생각합니다
               <br />
-              공부하며 새로 알게된 정보들은 이곳에 정리하거나&nbsp;
+              공부하며 새로 알게된 정보들은 이곳에 정리하거나&nbsp;<br/>
               <Link to={"https://github.com/WanderedToLa/Awesome-FE-Engineers"}>
                 따로 모아서 관리하고 있습니다
               </Link>
@@ -53,6 +53,7 @@ export default function Home() {
             </ul>
           </main>
         </div>
+        <div className="right-container">3d animation</div>
       </div>
     </Layout>
   );
