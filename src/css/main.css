@@ -6,14 +6,13 @@
 
 .container {
   width: 50%;
-  padding: 2.5rem;
+  min-height: 100vh;
 }
 
 .right-container {
   background-color: pink;
   width: 50%;
   min-height: 100vh;
-
 }
 
 .main-title {
