@@ -1,5 +1,5 @@
 .navbar-github-link::before {
-  content: "";
+  content: '';
   width: 24px;
   height: 24px;
   display: flex;
@@ -11,6 +11,6 @@
   opacity: 0.6;
 }
 
-[data-theme="dark"] .navbar-github-link::before {
+[data-theme='dark'] .navbar-github-link::before {
   background: url(../../static/icons/github-dark.svg) no-repeat center;
 }
