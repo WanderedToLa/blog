@@ -25,7 +25,8 @@ export default function Home() {
                 <br />
                 <Link to={'https://github.com/WanderedToLa/Awesome-FE-Engineers'}>따로 모아서 관리하고 있습니다</Link>
                 <br />
-                또한 앞으로 WebAssembly를 기반으로한 웹 생태계를 주목하고 있습니다.
+                또한 앞으로 WebAssembly를 기반으로한
+                <br /> 웹 생태계를 주목하고 있습니다.
               </p>
             </header>
             <main className="main">
