@@ -5,13 +5,12 @@
 }
 
 .container {
-  width: 50%;
   min-height: 100vh;
 }
 
 .right-container {
   background-color: #000;
-  width: 50%;
+  width: 100%;
   min-height: 100vh;
 }
 
