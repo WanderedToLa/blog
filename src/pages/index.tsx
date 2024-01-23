@@ -3,8 +3,13 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
 
+type a = 'A' | 'B' | 'C';
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+
+  function test(a: a, b: string) {
+    return a + b;
+  }
 
   return (
     <Layout title={`${siteConfig.title}`} description={`${siteConfig.tagline}`}>
@@ -30,6 +35,7 @@ export default function Home() {
               </p>
             </header>
             <main className="main">
+              {test('D', 'abc')}
               <h2 className="post-title">Recent Posts</h2>
               <ul className="post-list-container">
                 <li>
