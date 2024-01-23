@@ -2,8 +2,9 @@
 sidebar_position: 1
 ---
 
-# 내 import 문이 그렇게 이상했나요?
+# [FECONF 2022] 내 import 문이 그렇게 이상했나요?
 
+- [FECONF 2022 [B4] 내 import 문이 그렇게 이상했나요?](https://www.youtube.com/watch?v=mee1QbvaO10)
 - 토스 FrontEnd 박서진님
 - Github [raon0211](https://github.com/raon0211)
 
@@ -34,7 +35,7 @@ javascript가 browser에만 사용되던 시절에 module이란 개념은 존재
 
 <script>
   jQuery(document).ready(function () {
-    loadash.get(obj, "foo");
+    loadash.get(obj, 'foo');
   });
 </script>
 ```
