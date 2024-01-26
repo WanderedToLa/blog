@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <Layout title={`${siteConfig.title}`} description={`${siteConfig.tagline}`}>
       <div className="layout-container">
-        <div className="container">
-          <div style={{ padding: '2.5rem' }}>
+        <div className="main-container">
+          <div>
             <header>
               <Heading as="h1" className="main-title">
                 안녕하세요!👋
@@ -33,25 +33,13 @@ export default function Home() {
               <h2 className="post-title">Recent Posts</h2>
               <ul className="post-list-container">
                 <li>
-                  <Link to={''}>게시글 1</Link>
-                </li>
-                <li>
-                  <Link to={''}>게시글 1</Link>
-                </li>
-                <li>
-                  <Link to={''}>게시글 1</Link>
-                </li>
-                <li>
-                  <Link to={''}>게시글 1</Link>
-                </li>
-                <li>
-                  <Link to={''}>게시글 1</Link>
+                  <Link to={'/blog/dev-ex'}>개발자의 생산성</Link>
+                  2024-01-26
                 </li>
               </ul>
             </main>
           </div>
         </div>
-        <div className="right-container">sdf</div>
       </div>
     </Layout>
   );

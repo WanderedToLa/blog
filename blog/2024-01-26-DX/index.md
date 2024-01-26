@@ -1,11 +1,9 @@
 ---
-slug: welcome
-title: Welcome
+slug: dev-ex
+title: 개발자의 생산성
 authors: [WanderedToLa]
-tags: [hello]
+tags: [DX]
 ---
-
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
 
 :::tip
 
@@ -23,8 +21,6 @@ The blog post date can be extracted from filenames, such as:
 - `2019-05-30-welcome/index.md`
 
 A blog post folder can be convenient to co-locate blog post images:
-
-![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)
 
 The blog supports tags as well!
 
