@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[512],{4352:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"\uac1c\ubc1c\uc790\uc758 \uc0dd\uc0b0\uc131","permalink":"/logs/blog/dev-ex","unlisted":false}]}')}}]);
