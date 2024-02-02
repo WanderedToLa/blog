@@ -1,43 +1,46 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import Link from '@docusaurus/Link';
 
-import styles from './index.module.css';
+export default function Home() {
+  const { siteConfig } = useDocusaurusContext();
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+    <Layout title={`${siteConfig.title}`} description={`${siteConfig.tagline}`}>
+      <div className="layout-container">
+        <div className="main-container">
+          <div>
+            <header>
+              <Heading as="h1" className="main-title">
+                안녕하세요!👋
+                <br />
+                저는 김우석입니다.
+              </Heading>
+              <p className="main-description">
+                서울에서 프론트엔드 개발자로 일하고 있으며 <br />
+                좋은 가치는 좋은 개발경험에서 나온다고 생각합니다
+                <br />
+                공부하며 새로 알게된 정보들은 이곳에 정리하거나&nbsp;
+                <br />
+                <Link to={'https://github.com/WanderedToLa/Awesome-FE-Engineers'}>따로 모아서 관리하고 있습니다</Link>
+                <br />
+                또한 앞으로 WebAssembly를 기반으로한
+                <br /> 웹 생태계를 주목하고 있습니다.
+              </p>
+            </header>
+            <main className="main">
+              <h2 className="post-title">Recent Posts</h2>
+              <ul className="post-list-container">
+                <li>
+                  <Link to={'/blog/dev-ex'}>개발자의 생산성</Link>
+                  2024-01-26
+                </li>
+              </ul>
+            </main>
+          </div>
         </div>
       </div>
-    </header>
-  );
-}
-
-export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
     </Layout>
   );
 }

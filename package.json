@@ -1,5 +1,5 @@
 {
-  "name": "logs",
+  "name": "blog",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -21,7 +21,8 @@
     "clsx": "^1.2.1",
     "prism-react-renderer": "^2.1.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "three": "^0.160.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.0.0",
