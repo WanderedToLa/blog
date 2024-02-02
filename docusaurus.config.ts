@@ -9,7 +9,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://wanderedtola.github.io',
-  baseUrl: '/logs/',
+  baseUrl: '/',
   organizationName: 'WanderedToLa',
   projectName: 'logs',
   deploymentBranch: 'gh-pages',
