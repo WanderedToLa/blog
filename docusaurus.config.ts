@@ -8,11 +8,12 @@ const config: Config = {
   titleDelimiter: '•',
   favicon: 'img/favicon.ico',
 
-  url: 'https://wanderedtola.github.io/',
+  url: 'https://wanderedtola.github.io',
   baseUrl: '/',
   organizationName: 'WanderedToLa',
   projectName: 'blog',
   deploymentBranch: 'gh-pages',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
