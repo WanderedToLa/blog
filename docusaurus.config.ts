@@ -8,13 +8,11 @@ const config: Config = {
   titleDelimiter: '•',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: 'https://wanderedtola.github.io/',
   baseUrl: '/',
   organizationName: 'WanderedToLa',
-  projectName: 'logs',
+  projectName: 'blog',
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
