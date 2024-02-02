@@ -8,7 +8,7 @@ const config: Config = {
   titleDelimiter: '•',
   favicon: 'img/favicon.ico',
 
-  url: 'https://wanderedtola.github.io',
+  url: 'https://wandered2la.com',
   baseUrl: '/',
   organizationName: 'WanderedToLa',
   projectName: 'logs',
