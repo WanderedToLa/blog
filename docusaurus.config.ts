@@ -9,9 +9,9 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://wanderedtola.github.io',
-  baseUrl: '/',
+  baseUrl: '/logs/',
   organizationName: 'WanderedToLa',
-  projectName: 'blog',
+  projectName: 'logs',
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
