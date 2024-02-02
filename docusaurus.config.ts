@@ -13,6 +13,7 @@ const config: Config = {
   organizationName: 'WanderedToLa',
   projectName: 'logs',
   deploymentBranch: 'gh-pages',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
