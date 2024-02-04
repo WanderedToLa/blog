@@ -23,10 +23,9 @@ export default function Home() {
                 <br />
                 공부하며 새로 알게된 정보들은 이곳에 정리하거나&nbsp;
                 <br />
-                <Link to={'https://github.com/WanderedToLa/Awesome-FE-Engineers'}>따로 모아서 관리하고 있습니다</Link>
+                <Link to={'https://github.com/WanderedToLa/Awesome-FE-Engineers'}>따로 모아 관리하고</Link>
                 <br />
-                또한 앞으로 WebAssembly를 기반으로한
-                <br /> 웹 생태계를 주목하고 있습니다.
+                WebAssembly기반의 웹 생태계를 주목하고 있습니다.
               </p>
             </header>
             <main className="main">

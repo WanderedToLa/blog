@@ -6,9 +6,9 @@
 }
 
 .main-container {
-  margin-top: 10rem;
-  max-width: 997px;
-  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 997px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -47,4 +47,26 @@
   font-size: 1.3rem;
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 996px) {
+  .main-container {
+    padding: 3rem;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .main-description {
+    font-size: 1.3rem;
+  }
+
+  .post-title {
+    font-size: 1.5rem;
+  }
+
+  .post-list-container li {
+    font-size: 1rem;
+  }
 }
