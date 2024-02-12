@@ -5,6 +5,11 @@ authors: [WanderedToLa]
 tags: [DX]
 ---
 
+# Measuring Devloper Productivity: Real-World Examples
+
+- test
+- [Measuring Devloper Productivity: Real-World Examples](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity-bae)
+
 :::tip
 
 Use the power of React to create interactive blog posts.
