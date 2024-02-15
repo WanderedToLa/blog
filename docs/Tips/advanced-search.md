@@ -10,5 +10,5 @@ sidebar_position: 2
 복붙용 조건 설정 옵션이 많긴한데 일단 이정도면 충분
 
 ```markdown
-stars:100 label:"good first issue" language:TypeScript language:TypeScript
+label:"good first issue" language:TypeScript language:TypeScript stars:<500
 ```
