@@ -22,8 +22,30 @@
 <!-- -->이 세가지 능력은 다음 공식에 따른다.</p>
 <div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token maybe-class-name">Quailty</span><span class="token plain"> </span><span class="token operator">=</span><span class="token plain"> </span><span class="token constant" style="color:rgb(189, 147, 249)">F</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token constant" style="color:rgb(189, 147, 249)">K</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"> </span><span class="token constant" style="color:rgb(189, 147, 249)">P</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"> </span><span class="token constant" style="color:rgb(189, 147, 249)">T</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token punctuation" style="color:rgb(248, 248, 242)">;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>맨처음으로 많이아는 것 <code>Knowledge</code>, 두번째로는 연습 <code>Practice</code>, 세번째는 재능이다 <code>Talent</code><br>
-<strong>주의 해야할점은 K-P-T순서대로 중요하고 재능이 아닌 많이 아는것이 중요하다는 점.</strong></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-start">How To Start?<a href="https://wandered2la.com/blog/how-to-speak#how-to-start" class="hash-link" aria-label="Direct link to How To Start?" title="Direct link to How To Start?">​</a></h3>]]></content>
+<strong>중요도는 K-P-T순 재능이아닌 많이 아는것이 중요하다.</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-start">How To Start?<a href="https://wandered2la.com/blog/how-to-speak#how-to-start" class="hash-link" aria-label="Direct link to How To Start?" title="Direct link to How To Start?">​</a></h3>
+<p>어떤 사람들은 농담으로 시작하는것이 좋다고 하지만<br>
+<code>Patrick Winston</code> 교수가 말하는 첫번째 방법은 <strong>약속하기</strong><br>
+<!-- -->예를들어, <strong>이 60분 강의 후에 여러분들은 지금까지는 몰랐던 대화방법을 알게 될겁니다</strong><br>
+<!-- -->와 같이 약속을 하며 시작한다.</p>
+<p><code>Patrick Winston</code> 교수가 강의를 할때마다 마음에 새기는 몇가지 사례를 소개하는데</p>
+<ol>
+<li>
+<p>주제에 대해 반복하기 - "포인트는, 왜냐하면, 많은 이유가 있는데..."</p>
+<ul>
+<li>모르는 사람에게 말하듯 세번씩 반복</li>
+</ul>
+</li>
+<li>
+<p>내 아이디어에 경계를 지음 - 다른 사람과 아이디어 차별화</p>
+</li>
+<li>
+<p>주제에 대해 거듭 상기시키기 - 강연중 사람들은 주제를 잃어버리곤 함.</p>
+</li>
+<li>
+<p>질문하기 - 적절한 질문 어렵거나 너무뻔하지 않은</p>
+</li>
+</ol>]]></content>
         <author>
             <name>WooSeok</name>
             <uri>https://github.com/WanderedToLa</uri>
