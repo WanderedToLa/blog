@@ -1,11 +1,11 @@
 ---
 slug: dev-ex
-title: 개발자의 생산성
+title: Measuring Devloper Productivity
 authors: [WanderedToLa]
 tags: [DX]
 ---
 
-# Measuring Devloper Productivity: Real-World Examples
+## Measuring Devloper Productivity: Real-World Examples
 
 - test
 - [Measuring Devloper Productivity: Real-World Examples](https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity-bae)
