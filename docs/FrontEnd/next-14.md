@@ -9,7 +9,7 @@ sidebar_position: 3
 ## App Router
 
 새로운 App Router 등장  
-The App Router is a newer router that allows you to use React's latest features, such as Server Components and Streaming.
+The App Router is a newer router that allows you to use React's latest features, such as Server Components and Streaming.  
 기존의 pages router문서도 남아있으니 선택하여 볼 수 있음.
 
 ## Route Groups
