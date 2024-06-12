@@ -16,4 +16,14 @@ The App Router is a newer router that allows you to use React's latest features,
 
 - [Route Groups](https://nextjs.org/docs/app/building-your-application/routing/route-groups)  
   기본적으로 `app`안에 있는 폴더들은 url경로에 표시되지만 url경로에 포함되지 않으면서 그룹으로 묶을 수 있음  
-  괄호로 묶어 생성(folderName)
+  괄호로 묶어 생성(folderName) 여러개의 독립적인 레이아웃을 가져야 하거나 특정 페이지만 레이아웃을 가질 때  
+  사용할 수 있다.
+
+:::tip
+
+- Route Groups자체는 조직을 위한것 외에는 큰 의미가 있지 않음.
+- Route Groups를 사용할때 동일한 경로를 사용하면 안됨. `(shop)/about/page.js` / `(marketing)/about/page.js`
+- 최상위 layout파일이 없이 여러개의 RootLayout을 사용하는경우 RouteGroup 안에 정의해야함
+- 여러개의 RootLayout을 탐색할 경우 전체 페이지가 로드됨.
+
+:::
