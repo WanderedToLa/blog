@@ -5,7 +5,7 @@ sidebar_position: 3
 # Next.js 14
 
 - [Introduction](https://nextjs.org/docs) Next.js 공식문서
-- 참고용으로만 정리
+- 참고용으로만 정리 순서X
 
 ## App Router
 
@@ -37,3 +37,31 @@ export default function Page() {
 - 여러개의 RootLayout을 탐색할 경우 전체 페이지가 로드됨.
 
 :::
+
+## Parallel Routes
+
+- [Parallel Routes](https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#useselectedlayoutsegments)
+
+동일한 레이아웃 내에서 한개 이상의 페이지를 동시 혹은 조건부 렌더링 가능.  
+`Parallel Route`는 `Slots`으로 정의 `@foldername`와 같이 생성  
+`Slot`은 상위 레이아웃에 Props로 전달하여 사용함 이는 url경로에 영향을 주지않음.
+
+```tsx title="app/layout.tsx"
+export default function Layout({
+  children,
+  team,
+  analytics,
+}: {
+  children: React.ReactNode;
+  analytics: React.ReactNode;
+  team: React.ReactNode;
+}) {
+  return (
+    <>
+      {children}
+      {team}
+      {analytics}
+    </>
+  );
+}
+```
