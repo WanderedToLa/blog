@@ -4,13 +4,23 @@ sidebar_position: 3
 
 # Next.js 14
 
-새로운 변경점 정리
+- [Introduction](https://nextjs.org/docs) Next.js 공식문서
+- 참고용으로만 정리
 
 ## App Router
 
 새로운 App Router 등장  
 The App Router is a newer router that allows you to use React's latest features, such as Server Components and Streaming.  
 기존의 pages router문서도 남아있으니 선택하여 볼 수 있음.
+
+`pages router`와는 달리 특수파일인 `page.js`가 index역할을 함
+
+```tsx title="app/page.tsx"
+// `app/page.tsx` is the UI for the `/` URL
+export default function Page() {
+  return <h1>Hello, Home page!</h1>;
+}
+```
 
 ## Route Groups
 
