@@ -65,3 +65,20 @@ export default function Layout({
   );
 }
 ```
+
+## Intercepting Routes
+
+- [Intercepting Routes](https://nextjs.org/docs/app/building-your-application/routing/intercepting-routes)
+
+url을 intercept하여 서로다른 url을 동시에 화면에 띄울수있음.  
+예를들어 피드에서 사진을 클릭`photo/123` 할때 의 경로를 가로채 url을 가리고 오버레이로 전환 `/feed`
+
+- ### Convention
+
+  `(..)`와 같은 규칙을 따름 폴더 상대경로 규칙`../`과 유사함  
+  이를 활용하여 모달을 만들때 유용함
+
+  - url을 통해 공통으로 사용하는 모달 생성
+  - 모달을 닫는대신 페이지를 새로고칠 때 컨텍스트 유지
+  - 이전 경로로 이동하는 대신 모달을 닫을 수 있음
+  - 앞으로 이동시 모달 생성
