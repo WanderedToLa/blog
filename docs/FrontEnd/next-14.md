@@ -82,3 +82,35 @@ url을 intercept하여 서로다른 url을 동시에 화면에 띄울수있음.
   - 모달을 닫는대신 페이지를 새로고칠 때 컨텍스트 유지
   - 이전 경로로 이동하는 대신 모달을 닫을 수 있음
   - 앞으로 이동시 모달 생성
+
+## API References
+
+The Next.js API reference
+
+### Functions
+
+1. useSelectedLayoutSegment
+
+- 호출된 레이아웃의 `1 depth`아래의 active route를 읽을 수 있는 client component hook
+
+```tsx title="app/example-client-component.tsx"
+'use client';
+
+import { useSelectedLayoutSegment } from 'next/navigation';
+
+export default function ExampleClientComponent() {
+  const segment = useSelectedLayoutSegment();
+
+  return <p>Active segment: {segment}</p>;
+}
+
+// app/layout.js ->	/dashboard ->	return 'dashboard'
+// app/dashboard/layout.js ->	/dashboard -> return	null
+// app/dashboard/layout.js ->	/dashboard/analytics/monthly ->	return 'analytics'
+```
+
+선택적으로 `parallelRoutesKey`를 읽을 수 있음
+
+```ts
+const segment = useSelectedLayoutSegment(parallelRoutesKey?: string)
+```
