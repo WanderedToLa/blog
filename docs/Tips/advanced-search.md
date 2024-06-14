@@ -5,9 +5,7 @@ sidebar_position: 2
 # Github Advanced Search 팁
 
 - [Advanced search](https://github.com/search/advanced)
-
-오픈소스 컨트리뷰트를 목적으로 `good first issue` 를 찾아 다닐때  
-복붙용 조건 설정 옵션이 많긴한데 일단 이정도면 충분
+- 원하는 이슈 `label` 찾기 `stars`옵션은 repo에만적용 `good first issue`와 repo의 star갯수는 &&안됨
 
 ```js
 /*
