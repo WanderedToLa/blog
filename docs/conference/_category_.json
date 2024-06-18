@@ -1,8 +1,4 @@
 {
   "label": "Conference",
-  "position": 1,
-  "link": {
-    "type": "generated-index",
-    "description": "컨퍼런스의 발표된 주제를 정리합니다."
-  }
+  "position": 1
 }
