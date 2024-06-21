@@ -54,3 +54,10 @@ Frontend의 Observability를 가능한 최대로 끌어올리는 것과 Metric�
 App의 성능을 측정하고 최적화,정확성을 테스트하여 웹사이트의 다양한 측면들을 원활하게  
 만들어 사용자 경험을 개선하고 에러를 감지하여 신속하게 처리할 수 있는 모니터링 환경을 구성하는 것
 이상적으로는 에러가 아예없는 환경이 안전한 프론트엔드 서비스에 근접하지 않을까 라고 대답할것같다.
+
+### 참고
+
+- [SSR의 기쁨과 슬픔: 렌더링의 변화의 흐름을 통해 알아보는 SSR과 Streaming SSR | 인프콘2023](https://www.youtube.com/watch?v=hPyyFu3lrEg&list=PLpkj8RKr48waFtrqvJjbNrpGCvdxyX8Nx&index=30)
+- [[Dev Dive\_ Frontend Day] 스트리밍 SSR 딥 다이브](https://www.youtube.com/watch?v=9xl9X2pfHeI&t=1934s)
+- [토스ㅣSLASH 23 - 분산 추적 체계 & 로그 중심으로 Observability 확보하기](https://www.youtube.com/watch?v=Ifz0LsfAG94&list=PL1DJtS1Hv1PiGXmgruP1_gM2TSvQiOsFL&index=23)
+- [토스ㅣSLASH 22 - 잃어버린 개발자의 시간을 찾아서: 매일 하루를 아끼는 DevOps 이야기](https://www.youtube.com/watch?v=2IE68SDTYvI)
