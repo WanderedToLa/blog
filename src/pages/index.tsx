@@ -32,8 +32,8 @@ export default function Home() {
               <h2 className="post-title">Recent Posts</h2>
               <ul className="post-list-container">
                 <li>
-                  <Link to={'/blog/dev-ex'}>개발자의 생산성</Link>
-                  2024-01-26
+                  <Link to={'/blog/frontend-observability'}>안전한 프론트엔드 서비스란?</Link>
+                  2024-06-22
                 </li>
               </ul>
             </main>
