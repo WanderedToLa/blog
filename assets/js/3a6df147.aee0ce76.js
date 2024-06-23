@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[3772],{5094:e=>{e.exports=JSON.parse('{"label":"MITOpenCourseWare","permalink":"/blog/tags/mit-open-course-ware","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

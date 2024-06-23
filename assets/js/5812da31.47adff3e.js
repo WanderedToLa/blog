@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[4292],{7816:s=>{s.exports=JSON.parse('{"label":"Patrick Winston","permalink":"/blog/tags/patrick-winston","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

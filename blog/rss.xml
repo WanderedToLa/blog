@@ -4,10 +4,25 @@
         <title>Wandered2LA Blog</title>
         <link>https://wandered2la.com/blog</link>
         <description>Wandered2LA Blog</description>
-        <lastBuildDate>Sat, 22 Jun 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 24 Jun 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[강아지]]></title>
+            <link>https://wandered2la.com/blog/reactiflux-pets</link>
+            <guid>https://wandered2la.com/blog/reactiflux-pets</guid>
+            <pubDate>Mon, 24 Jun 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[요즘 오픈소스들 커뮤니티에 참여하려고 디스코드 채널에서 토론하는거 구경하는데]]></description>
+            <content:encoded><![CDATA[<p>요즘 오픈소스들 커뮤니티에 참여하려고 디스코드 채널에서 토론하는거 구경하는데<br>
+<!-- -->react 커뮤니티인 Reactiflux 디스코드에 반려동물 얘기하는 탭이 있다 ㅋㅋ.<br>
+<!-- -->반려동물 사랑은 똑같은듯</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pets">pets<a href="https://wandered2la.com/blog/reactiflux-pets#pets" class="hash-link" aria-label="Direct link to pets" title="Direct link to pets">​</a></h2>
+<p><img loading="lazy" alt="pets" src="https://wandered2la.com/assets/images/reactiflux-pets-0cb3d1dc333e3be3cfde3fafde1a3c5c.png" width="947" height="1277" class="img_ev3q"><br>
+<!-- -->나도 예전에 키우던 강아지 올림</p>]]></content:encoded>
+            <category>pets</category>
+            <category>reactiflux</category>
+        </item>
         <item>
             <title><![CDATA[안전한 프론트엔드 서비스란?]]></title>
             <link>https://wandered2la.com/blog/frontend-observability</link>

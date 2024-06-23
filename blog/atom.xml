@@ -2,11 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wandered2la.com/blog</id>
     <title>Wandered2LA Blog</title>
-    <updated>2024-06-22T00:00:00.000Z</updated>
+    <updated>2024-06-24T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wandered2la.com/blog"/>
     <subtitle>Wandered2LA Blog</subtitle>
     <icon>https://wandered2la.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[강아지]]></title>
+        <id>https://wandered2la.com/blog/reactiflux-pets</id>
+        <link href="https://wandered2la.com/blog/reactiflux-pets"/>
+        <updated>2024-06-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[요즘 오픈소스들 커뮤니티에 참여하려고 디스코드 채널에서 토론하는거 구경하는데]]></summary>
+        <content type="html"><![CDATA[<p>요즘 오픈소스들 커뮤니티에 참여하려고 디스코드 채널에서 토론하는거 구경하는데<br>
+<!-- -->react 커뮤니티인 Reactiflux 디스코드에 반려동물 얘기하는 탭이 있다 ㅋㅋ.<br>
+<!-- -->반려동물 사랑은 똑같은듯</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pets">pets<a href="https://wandered2la.com/blog/reactiflux-pets#pets" class="hash-link" aria-label="Direct link to pets" title="Direct link to pets">​</a></h2>
+<p><img loading="lazy" alt="pets" src="https://wandered2la.com/assets/images/reactiflux-pets-0cb3d1dc333e3be3cfde3fafde1a3c5c.png" width="947" height="1277" class="img_ev3q"><br>
+<!-- -->나도 예전에 키우던 강아지 올림</p>]]></content>
+        <author>
+            <name>WooSeok</name>
+            <uri>https://github.com/WanderedToLa</uri>
+        </author>
+        <category label="pets" term="pets"/>
+        <category label="reactiflux" term="reactiflux"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[안전한 프론트엔드 서비스란?]]></title>
         <id>https://wandered2la.com/blog/frontend-observability</id>
