@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Javascript의 null check
@@ -7,7 +7,7 @@ sidebar_position: 1
 javascript 에서의 `null`은 falsy한 원시 값이지만 타입은 `object`인 특별한 존재.
 
 ```javascript
-typeof null === "object"; // true
+typeof null === 'object'; // true
 ```
 
 정확히는 `null`을 반환하는 쪽이 맞겠지만 근 20년간 버텨왔고 이제와 수정하기에는 늦어버렸으니 사용하는데 주의 할것.  
@@ -15,7 +15,7 @@ typeof null === "object"; // true
 
 ```javascript
 var a = null;
-!a && typeof a === "object"; // true
+!a && typeof a === 'object'; // true
 ```
 
 # function type
@@ -41,7 +41,7 @@ a.length; //2
 자동으로 관리되는 특성을 가진 객체의 하위타입이다.
 
 ```javascript
-typeof [1, 2, 3] === "object"; //true
+typeof [1, 2, 3] === 'object'; //true
 ```
 
 typescript에서는 이러한 특성을 이용해 제네릭에서 사용하기도 하는데,  
