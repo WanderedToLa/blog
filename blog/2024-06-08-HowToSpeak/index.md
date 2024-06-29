@@ -7,6 +7,8 @@ tags: [MITOpenCourseWare, Patrick Winston]
 
 ## How To Speak
 
+2024.06.30 ~ing
+
 - 재능보다 아는것이 중요하다.
 - [How to Speak-MIT OpenCourseWare](https://www.youtube.com/watch?v=Unzc731iCUY)
 
