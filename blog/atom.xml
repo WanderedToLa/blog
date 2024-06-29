@@ -71,7 +71,7 @@
 <!-- -->App의 성능을 측정하고 최적화,정확성을 테스트하여 웹사이트의 다양한 측면들을 원활하게<br>
 <!-- -->만들어 사용자 경험을 개선하고 에러를 감지하여 신속하게 처리할 수 있는 모니터링 환경을 구성하는 것
 이상적으로는 에러가 아예없는 환경이 안전한 프론트엔드 서비스에 근접하지 않을까 라고 대답할것같다.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="참고">참고<a href="https://wandered2la.com/blog/frontend-observability#%EC%B0%B8%EA%B3%A0" class="hash-link" aria-label="Direct link to 참고" title="Direct link to 참고">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="참고">참고<a href="https://wandered2la.com/blog/frontend-observability#%EC%B0%B8%EF%BF%BD%EF%BF%BD%EA%B3%A0" class="hash-link" aria-label="Direct link to 참고" title="Direct link to 참고">​</a></h3>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=hPyyFu3lrEg&amp;list=PLpkj8RKr48waFtrqvJjbNrpGCvdxyX8Nx&amp;index=30" target="_blank" rel="noopener noreferrer">SSR의 기쁨과 슬픔: 렌더링의 변화의 흐름을 통해 알아보는 SSR과 Streaming SSR | 인프콘2023</a></li>
 <li><a href="https://www.youtube.com/watch?v=9xl9X2pfHeI&amp;t=1934s" target="_blank" rel="noopener noreferrer">[Dev Dive_ Frontend Day] 스트리밍 SSR 딥 다이브</a></li>
@@ -138,33 +138,5 @@
         </author>
         <category label="MITOpenCourseWare" term="MITOpenCourseWare"/>
         <category label="Patrick Winston" term="Patrick Winston"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Measuring Devloper Productivity]]></title>
-        <id>https://wandered2la.com/blog/dev-ex</id>
-        <link href="https://wandered2la.com/blog/dev-ex"/>
-        <updated>2024-01-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Measuring Devloper Productivity: Real-World Examples]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="measuring-devloper-productivity-real-world-examples">Measuring Devloper Productivity: Real-World Examples<a href="https://wandered2la.com/blog/dev-ex#measuring-devloper-productivity-real-world-examples" class="hash-link" aria-label="Direct link to Measuring Devloper Productivity: Real-World Examples" title="Direct link to Measuring Devloper Productivity: Real-World Examples">​</a></h2>
-<ul>
-<li>test</li>
-<li><a href="https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity-bae" target="_blank" rel="noopener noreferrer">Measuring Devloper Productivity: Real-World Examples</a></li>
-</ul>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>Use the power of React to create interactive blog posts.</p></div></div>
-<p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p>
-<p>Regular blog authors can be added to <code>authors.yml</code>.</p>
-<p>The blog post date can be extracted from filenames, such as:</p>
-<ul>
-<li><code>2019-05-30-welcome.md</code></li>
-<li><code>2019-05-30-welcome/index.md</code></li>
-</ul>
-<p>A blog post folder can be convenient to co-locate blog post images:</p>
-<p>The blog supports tags as well!</p>
-<p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content>
-        <author>
-            <name>WooSeok</name>
-            <uri>https://github.com/WanderedToLa</uri>
-        </author>
-        <category label="DX" term="DX"/>
     </entry>
 </feed>
