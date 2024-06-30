@@ -7,14 +7,20 @@ tags: [docusaurus, plugin, custom]
 
 ## Recent Posts
 
-이 블로그 메인페이지에 recent post 기능을 추가하려고 대충 파일시스템으로 읽은다음  
-메인페이지에 보여주려고 했더니 은근 까다롭게 굴길레 문서를 정독한 결과  
-plugin만들어 쓰기로 결정했고 blog 관련 plugin이 있긴했지만 [plugin-content-blog](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog)  
-config의 blog필드를 이용하고 내가 원하는 모양이 아니여서 패스함
+메인페이지에 recentpost 기능을 추가하려고 미루다가 드디어 시작하며  
+docusaurus에서 직접 파일시스템에 접근하려고 몇번을 삽질하다가  
+plugin을 만들어 사용해야한다는 결론을 얻었다.  
+이미 만들어진 blog 관련 plugin이 있긴했지만 [plugin-content-blog](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog)  
+config 필드에서 option을통해 수정하는 방식은 원하던 모양이 아니라 패스했음.
 
-## 주의할 점
+## Architecture
 
-docusaurus plugin은 코드를 직접 import해서 쓰거나 하지않고  
+Archive탭에 있는 글 중 최신순으로 5개만 메인페이지에 보여주고 싶었는데  
+메인페이지에서 비동기로 파일시스템을 호출해 읽은다음 slug를 리턴하는 식으로  
+구상했지만 docusaurus의 제작의도랑은 전혀 다르기때문에 에러가 생길 수 밖에없다.  
+친절하게도 아키텍처 소개글을 보며 감을 잡을수 있었음
+
+docusaurus의 설계 혹은 멘탈모델이 코드를 직접 import해서 쓰거나 하지않고  
 json으로 임시파일을 만들어 데이터를 주고받거나 사용자가 plugin에 접근한다면  
 오로지 config.js를 통해 상호작용 할 수 있도록 설계되어 있기때문에  
 여기서 제공하는 Lifecycle API를 이용해 build시 생성된 json 파일로  
@@ -71,12 +77,17 @@ export default {
 - [Lifecycle APIs](https://docusaurus.io/docs/api/plugin-methods/lifecycle-apis)
 
 API들중 가장 중요하다고 볼 수 있는 `async loadContent()`와  
-`async contentLoaded({content, actions})` 두 가지가 있는데 `loadContent`에서 파일시스템에  
-접근하거나 다양한 동작들이 가능한데 `loadContent`에서 내가 필요한 값을 return한다면  
+`async contentLoaded({content, actions})` 두 가지가 있다 `loadContent`에서 파일시스템에  
+접근하거나 다양한 동작들이 가능하고 `loadContent`에서 내가 필요한 값을 return한다면  
 그 값은`contentLoaded`함수에서 `content` 파라미터로 받는다. `actions`의 경우  
 기본으로 제공하는 3가지 함수들이 있고 경로를 설정하는 경우 `appRoute`  
 json파일을 만든다면 `createData` 나의 경우 기존 globalData.json에 데이터를
 추가하려고 했기에 마지막인 `setGlobalData`를 사용했다.
+
+- loadContent - 다양한 동작을 정의하는 함수 (파일시스템, API호출...)
+- contentLoaded - content,actions를 파라미터로 받는 함수
+  - content: loadCotent의 리턴값
+  - actions: appRoute, createData, setGlobalData로 구성
 
 ```ts title="./src/plugins/my-plugin.js"
 export default {
