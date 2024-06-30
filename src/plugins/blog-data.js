@@ -40,7 +40,7 @@ async function createBlogDataPlugin(context, options) {
 
     async contentLoaded({ content, actions }) {
       const { setGlobalData } = actions;
-      setGlobalData({ recentPosts: content });
+      setGlobalData({ myBlogData: content });
     },
   };
 }

@@ -23,7 +23,7 @@ const config: Config = {
     locales: ['en'],
   },
 
-  plugins: ['./src/plugins/recent-post'],
+  plugins: ['./src/plugins/blog-data'],
 
   presets: [
     [
