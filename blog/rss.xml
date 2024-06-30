@@ -4,25 +4,10 @@
         <title>Wandered2LA Blog</title>
         <link>https://wandered2la.com/blog</link>
         <description>Wandered2LA Blog</description>
-        <lastBuildDate>Mon, 24 Jun 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 22 Jun 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[강아지]]></title>
-            <link>https://wandered2la.com/blog/reactiflux-pets</link>
-            <guid>https://wandered2la.com/blog/reactiflux-pets</guid>
-            <pubDate>Mon, 24 Jun 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[요즘 오픈소스들 커뮤니티에 참여하려고 디스코드 채널에서 토론하는거 구경하는데]]></description>
-            <content:encoded><![CDATA[<p>요즘 오픈소스들 커뮤니티에 참여하려고 디스코드 채널에서 토론하는거 구경하는데<br>
-<!-- -->react 커뮤니티인 Reactiflux 디스코드에 반려동물 얘기하는 탭이 있다 ㅋㅋ.<br>
-<!-- -->반려동물 사랑은 똑같은듯</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pets">pets<a href="https://wandered2la.com/blog/reactiflux-pets#pets" class="hash-link" aria-label="Direct link to pets" title="Direct link to pets">​</a></h2>
-<p><img loading="lazy" alt="pets" src="https://wandered2la.com/assets/images/reactiflux-pets-0cb3d1dc333e3be3cfde3fafde1a3c5c.png" width="947" height="1277" class="img_ev3q"><br>
-<!-- -->나도 예전에 키우던 강아지 올림</p>]]></content:encoded>
-            <category>pets</category>
-            <category>reactiflux</category>
-        </item>
         <item>
             <title><![CDATA[안전한 프론트엔드 서비스란?]]></title>
             <link>https://wandered2la.com/blog/frontend-observability</link>
@@ -68,7 +53,7 @@
 <!-- -->App의 성능을 측정하고 최적화,정확성을 테스트하여 웹사이트의 다양한 측면들을 원활하게<br>
 <!-- -->만들어 사용자 경험을 개선하고 에러를 감지하여 신속하게 처리할 수 있는 모니터링 환경을 구성하는 것
 이상적으로는 에러가 아예없는 환경이 안전한 프론트엔드 서비스에 근접하지 않을까 라고 대답할것같다.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="참고">참고<a href="https://wandered2la.com/blog/frontend-observability#%EC%B0%B8%EF%BF%BD%EF%BF%BD%EA%B3%A0" class="hash-link" aria-label="Direct link to 참고" title="Direct link to 참고">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="참고">참고<a href="https://wandered2la.com/blog/frontend-observability#%EC%B0%B8%EA%B3%A0" class="hash-link" aria-label="Direct link to 참고" title="Direct link to 참고">​</a></h3>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=hPyyFu3lrEg&amp;list=PLpkj8RKr48waFtrqvJjbNrpGCvdxyX8Nx&amp;index=30" target="_blank" rel="noopener noreferrer">SSR의 기쁨과 슬픔: 렌더링의 변화의 흐름을 통해 알아보는 SSR과 Streaming SSR | 인프콘2023</a></li>
 <li><a href="https://www.youtube.com/watch?v=9xl9X2pfHeI&amp;t=1934s" target="_blank" rel="noopener noreferrer">[Dev Dive_ Frontend Day] 스트리밍 SSR 딥 다이브</a></li>
@@ -77,57 +62,6 @@
 </ul>]]></content:encoded>
             <category>Observability</category>
             <category>Frontend</category>
-        </item>
-        <item>
-            <title><![CDATA[How To Speak]]></title>
-            <link>https://wandered2la.com/blog/how-to-speak</link>
-            <guid>https://wandered2la.com/blog/how-to-speak</guid>
-            <pubDate>Sat, 08 Jun 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[How To Speak]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-speak">How To Speak<a href="https://wandered2la.com/blog/how-to-speak#how-to-speak" class="hash-link" aria-label="Direct link to How To Speak" title="Direct link to How To Speak">​</a></h2>
-<p>2024.06.30 ~ing</p>
-<ul>
-<li>재능보다 아는것이 중요하다.</li>
-<li><a href="https://www.youtube.com/watch?v=Unzc731iCUY" target="_blank" rel="noopener noreferrer">How to Speak-MIT OpenCourseWare</a></li>
-</ul>
-<p>사회에서의 성공은 말하기, 글쓰기, 가진 아이디어의 퀄리티 순서로 결정된다.<br>
-<!-- -->이 세가지 능력은 다음 공식에 따른다.</p>
-<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token maybe-class-name">Quailty</span><span class="token plain"> </span><span class="token operator">=</span><span class="token plain"> </span><span class="token constant" style="color:rgb(189, 147, 249)">F</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token constant" style="color:rgb(189, 147, 249)">K</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"> </span><span class="token constant" style="color:rgb(189, 147, 249)">P</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"> </span><span class="token constant" style="color:rgb(189, 147, 249)">T</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token punctuation" style="color:rgb(248, 248, 242)">;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<p>맨처음으로 많이아는 것 <code>Knowledge</code>, 두번째로는 연습 <code>Practice</code>, 세번째는 재능이다 <code>Talent</code><br>
-<strong>중요도는 K-P-T순 재능이아닌 많이 아는것이 중요하다.</strong></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-start">How To Start?<a href="https://wandered2la.com/blog/how-to-speak#how-to-start" class="hash-link" aria-label="Direct link to How To Start?" title="Direct link to How To Start?">​</a></h3>
-<p>어떤 사람들은 농담으로 시작하는것이 좋다고 하지만<br>
-<code>Patrick Winston</code> 교수가 말하는 첫번째 방법은 <strong>약속하기</strong><br>
-<!-- -->예를들어, <strong>이 60분 강의 후에 여러분들은 지금까지는 몰랐던 대화방법을 알게 될겁니다</strong><br>
-<!-- -->와 같이 약속을 하며 시작한다.</p>
-<p><code>Patrick Winston</code> 교수가 강의를 할때마다 마음에 새기는 몇가지 사례를 소개하는데</p>
-<ol>
-<li>
-<p>주제에 대해 반복하기 - "포인트는, 왜냐하면, 많은 이유가 있는데..."</p>
-<ul>
-<li>모르는 사람에게 말하듯 세번씩 반복</li>
-</ul>
-</li>
-<li>
-<p>내 아이디어에 경계를 지음 - 다른 사람과 아이디어 차별화</p>
-</li>
-<li>
-<p>주제에 대해 거듭 상기시키기 - 강연중 사람들은 주제를 잃어버리곤 함.</p>
-</li>
-<li>
-<p>질문하기 - 적절한 질문 어렵거나 너무뻔하지 않은</p>
-</li>
-</ol>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-tools">The Tools<a href="https://wandered2la.com/blog/how-to-speak#the-tools" class="hash-link" aria-label="Direct link to The Tools" title="Direct link to The Tools">​</a></h3>
-<p>다음은 <code>Patrick Winston</code> 교수가 강의에서 유용하게 사용하는 몇가지 도구들을 소개한다</p>
-<ol>
-<li><strong>Time&amp;Place</strong><br>
-<!-- -->예를들어 발표를 할때 가장 적절한 시간은 오전11시. 모두 깨어있는 시간인데다<br>
-<!-- -->점심전이라 피곤하지 않아 발표를 위한 시간으로 적절함.<br>
-<!-- -->장소선정에 가장 중요한것은 밝은 조명 낮거나 어두우면 졸릴수 있다.</li>
-</ol>]]></content:encoded>
-            <category>MITOpenCourseWare</category>
-            <category>Patrick Winston</category>
         </item>
     </channel>
 </rss>
