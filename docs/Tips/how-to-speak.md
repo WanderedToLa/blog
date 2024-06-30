@@ -1,8 +1,5 @@
 ---
-slug: how-to-speak
-title: How To Speak
-authors: [WanderedToLa]
-tags: [MITOpenCourseWare, Patrick Winston]
+sidebar_position: 4
 ---
 
 ## How To Speak

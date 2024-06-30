@@ -1,8 +1,5 @@
 ---
-slug: reactiflux-pets
-title: 강아지
-authors: [WanderedToLa]
-tags: [pets, reactiflux]
+sidebar_position: 3
 ---
 
 요즘 오픈소스들 커뮤니티에 참여하려고 디스코드 채널에서 토론하는거 구경하는데  
