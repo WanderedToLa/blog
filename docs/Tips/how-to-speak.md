@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-## How To Speak
+# How To Speak
 
 2024.06.30 ~ing
 
