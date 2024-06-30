@@ -44,8 +44,6 @@ const config: Config = {
     ],
   ],
 
-  customFields: {},
-
   themeConfig: {
     colorMode: {
       defaultMode: 'dark',

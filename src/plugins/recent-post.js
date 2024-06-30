@@ -2,9 +2,9 @@ const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
 
-async function createRecentPostsPlugin(context, options) {
+async function createBlogDataPlugin(context, options) {
   return {
-    name: 'docusaurus-plugin-recent-posts',
+    name: 'docusaurus-plugin-blog-data',
 
     async loadContent() {
       const blogDir = path.join(__dirname, '../../blog');
@@ -45,4 +45,4 @@ async function createRecentPostsPlugin(context, options) {
   };
 }
 
-module.exports = createRecentPostsPlugin;
+module.exports = createBlogDataPlugin;

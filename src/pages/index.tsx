@@ -6,7 +6,7 @@ import Link from '@docusaurus/Link';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
-  const { recentPosts }: any = usePluginData('docusaurus-plugin-recent-posts');
+  const { myBlogData }: any = usePluginData('docusaurus-plugin-blog-data');
 
   return (
     <Layout title={`${siteConfig.title}`} description={`${siteConfig.tagline}`}>
@@ -33,7 +33,7 @@ export default function Home() {
             <main className="main">
               <h2 className="post-title">Recent Posts</h2>
               <ul className="post-list-container">
-                {recentPosts.map((post) => (
+                {myBlogData?.map((post) => (
                   <li key={post.slug}>
                     <Link to={`/blog/${post.slug}`}>{post.title}</Link>
                     {post.date}
