@@ -23,9 +23,11 @@ const config: Config = {
     locales: ['en'],
   },
 
+  plugins: ['./src/plugins/recent-post'],
+
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       {
         docs: {
           sidebarPath: './sidebars.ts',
@@ -41,6 +43,8 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+
+  customFields: {},
 
   themeConfig: {
     colorMode: {

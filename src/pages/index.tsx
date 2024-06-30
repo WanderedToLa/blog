@@ -1,10 +1,12 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { usePluginData } from '@docusaurus/useGlobalData';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+  const { recentPosts }: any = usePluginData('docusaurus-plugin-recent-posts');
 
   return (
     <Layout title={`${siteConfig.title}`} description={`${siteConfig.tagline}`}>
@@ -23,7 +25,7 @@ export default function Home() {
                 <br />
                 공부하며 새로 알게된 정보들은 이곳에 정리하거나&nbsp;
                 <br />
-                <Link to={'https://github.com/WanderedToLa/Awesome-FE-Engineers'}>따로 모아 관리하고</Link>
+                <Link to={'https://github.com/WanderedToLa/aweseom-articles'}>따로 모아 관리하고</Link>
                 <br />
                 WebAssembly기반의 웹 생태계를 주목하고 있습니다.
               </p>
@@ -31,10 +33,12 @@ export default function Home() {
             <main className="main">
               <h2 className="post-title">Recent Posts</h2>
               <ul className="post-list-container">
-                <li>
-                  <Link to={'/blog/frontend-observability'}>안전한 프론트엔드 서비스란?</Link>
-                  2024-06-22
-                </li>
+                {recentPosts.map((post) => (
+                  <li key={post.slug}>
+                    <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+                    {post.date}
+                  </li>
+                ))}
               </ul>
             </main>
           </div>
