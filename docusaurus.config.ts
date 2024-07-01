@@ -11,7 +11,7 @@ const config: Config = {
   url: 'https://wandered2la.com',
   baseUrl: '/',
   organizationName: 'WanderedToLa',
-  projectName: 'logs',
+  projectName: 'wanderedtola.blog',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
@@ -31,11 +31,11 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/WanderedToLa/logs/tree/master/',
+          editUrl: 'https://github.com/WanderedToLa/wanderedtola.blog/tree/master',
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/WanderedToLa/logs/tree/master/',
+          editUrl: 'https://github.com/WanderedToLa/wanderedtola.blog/tree/master',
         },
         theme: {
           customCss: './src/css/custom.css',

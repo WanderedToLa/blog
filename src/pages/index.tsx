@@ -1,5 +1,6 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { usePluginData } from '@docusaurus/useGlobalData';
+import Head from '@docusaurus/Head';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
@@ -10,6 +11,14 @@ export default function Home() {
 
   return (
     <Layout title={`${siteConfig.title}`} description={`${siteConfig.tagline}`}>
+      <Head>
+        <title>{siteConfig.title}</title>
+        <meta name="keywords" content="frontend, docusaurus" />
+        <meta name="author" content={siteConfig.organizationName} />
+        <meta property="og:title" content={siteConfig.title} />
+        <meta property="og:description" content={siteConfig.tagline} />
+        <meta property="og:url" content={siteConfig.url} />
+      </Head>
       <div className="layout-container">
         <div className="main-container">
           <div>
