@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwanderedtola_blog=self.webpackChunkwanderedtola_blog||[]).push([[7560],{4680:e=>{e.exports=JSON.parse('{"label":"Frontend","permalink":"/blog/tags/frontend","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
