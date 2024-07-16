@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.0.0">
 <title data-rh="true">2024-07-15 • Wandered2LA</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://wandered2la.com/docs/2024/07/07-15"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="2024-07-15 • Wandered2LA"><meta data-rh="true" name="description" content="Chrome extension content-script react"><meta data-rh="true" property="og:description" content="Chrome extension content-script react"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://wandered2la.com/docs/2024/07/07-15"><link data-rh="true" rel="alternate" href="https://wandered2la.com/docs/2024/07/07-15" hreflang="en"><link data-rh="true" rel="alternate" href="https://wandered2la.com/docs/2024/07/07-15" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Wandered2LA RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Wandered2LA Atom Feed"><link rel="stylesheet" href="/assets/css/styles.73f64512.css">
-<script src="/assets/js/runtime~main.5852cdb2.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.63cffa6f.js" defer="defer"></script>
 <script src="/assets/js/main.0dfb2b49.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -14,10 +14,11 @@
 <ul>
 <li><a href="https://github.com/yosevu/react-content-script" target="_blank" rel="noopener noreferrer">react-content-script</a></li>
 </ul>
-<p>Monica와 같은 디자인으로 익스텐션 개발시 sidepanel이 아닌 html안에 appendChild사용<br>
-<!-- -->createElement/appendChild -&gt; 페이지별로 CSS 상이함 -&gt; React</p>
-<p>Monica와 달리 동일한 width에도 화면내 영역을 차지하지않음<br>
-<!-- -->window.onload시 contentscript 자동 load</p>
+<p>Monica와 같은 디자인으로 익스텐션 개발시 <code>chrome.sidePanel</code>을 사용하지 않고<br>
+<!-- -->body안에 html을 삽입하는 구조로 작성해야함<br>
+<!-- -->createElement/appendChild를 이용한 html을 생성하려고 했으나 추후 디자인까지 고려해 React로 변경</p>
+<p>Monica와 달리 동일한 width에도 화면내 영역을 차지하지않고 (fixed position때문으로 추정됨)<br>
+<!-- -->onload시 contentscript가 자동으로 load되는 문제</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="process">Process<a href="#process" class="hash-link" aria-label="Direct link to Process" title="Direct link to Process">​</a></h2>
 <ol>
 <li>background service-worker -&gt; chrome API 실행 (toggle html)</li>
