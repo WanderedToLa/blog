@@ -23,19 +23,24 @@ async function createBlogDataPlugin(context, options) {
             const frontMatter = matter(content).data;
             if (frontMatter.slug && frontMatter.title) {
               const dateStr = file.split('-').slice(0, 3).join('-');
+              const dateObj = new Date(dateStr);
 
               posts.push({
                 slug: frontMatter.slug,
                 title: frontMatter.title,
-                date: dateStr,
+                date: dateObj,
               });
             }
           }
         }
       });
+
       posts.sort((a, b) => b.date - a.date);
 
-      return posts.slice(0, 5);
+      return posts.slice(0, 5).map((post) => ({
+        ...post,
+        date: post.date.toISOString().split('T')[0],
+      }));
     },
 
     async contentLoaded({ content, actions }) {
