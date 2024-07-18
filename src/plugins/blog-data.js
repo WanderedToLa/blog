@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('fs').promises;
 const path = require('path');
 const matter = require('gray-matter');
 
@@ -7,19 +7,33 @@ async function createBlogDataPlugin(context, options) {
     name: 'docusaurus-plugin-blog-data',
 
     async loadContent() {
-      const blogDir = path.join(__dirname, '../../blog');
-      const files = fs.readdirSync(blogDir);
+      const blogDir = path.join(context.siteDir, 'blog');
+      let files;
+
+      try {
+        files = await fs.readdir(blogDir);
+      } catch (error) {
+        console.error(`Error reading blog directory: ${error}`);
+        return [];
+      }
 
       const posts = [];
 
-      files.forEach((file) => {
+      for (const file of files) {
         const filePath = path.join(blogDir, file);
-        const stat = fs.statSync(filePath);
+        let stat;
+
+        try {
+          stat = await fs.stat(filePath);
+        } catch (error) {
+          console.error(`Error reading file stats: ${error}`);
+          continue;
+        }
 
         if (stat.isDirectory()) {
           const indexFilePath = path.join(filePath, 'index.md');
-          if (fs.existsSync(indexFilePath)) {
-            const content = fs.readFileSync(indexFilePath, 'utf-8');
+          try {
+            const content = await fs.readFile(indexFilePath, 'utf-8');
             const frontMatter = matter(content).data;
             if (frontMatter.slug && frontMatter.title) {
               const dateStr = file.split('-').slice(0, 3).join('-');
@@ -31,9 +45,11 @@ async function createBlogDataPlugin(context, options) {
                 date: dateObj,
               });
             }
+          } catch (error) {
+            console.error(`Error processing file ${indexFilePath}: ${error}`);
           }
         }
-      });
+      }
 
       posts.sort((a, b) => b.date - a.date);
 
