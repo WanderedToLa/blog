@@ -4,10 +4,40 @@
         <title>Wandered2LA Blog</title>
         <link>https://wandered2la.com/blog</link>
         <description>Wandered2LA Blog</description>
-        <lastBuildDate>Mon, 01 Jul 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Jul 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[안전한 서비스를위한 환경구성 in frontend]]></title>
+            <link>https://wandered2la.com/blog/frontend-environment</link>
+            <guid>https://wandered2la.com/blog/frontend-environment</guid>
+            <pubDate>Fri, 19 Jul 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[얼마전 토스과제를 진행하며 알게된 점들은 매끄러운 사용자경험을 위해 frontend 로직뿐 아니라]]></description>
+            <content:encoded><![CDATA[<p>얼마전 토스과제를 진행하며 알게된 점들은 매끄러운 사용자경험을 위해 frontend 로직뿐 아니라<br>
+<!-- -->보이지 않는 환경설정에도 엄청난 노력을 하고있음을 알게되었다. 이전에 개발을 하며<br>
+<!-- -->알고는 있지만 자세하게 몰랐던 부분과 그들의 디테일에 놀라워하며 면접준비를 했는데<br>
+<!-- -->이 글에서는 이 과정에서 알게된 사실들을 정리한다.</p>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>참고</div><div class="admonitionContent_BuS1"><p>Youtube 및 toss tech blog를 참고하여 작성한 글 입니다.</p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="dependencies-in-packagejson">dependencies in Package.json<a href="https://wandered2la.com/blog/frontend-environment#dependencies-in-packagejson" class="hash-link" aria-label="Direct link to dependencies in Package.json" title="Direct link to dependencies in Package.json">​</a></h2>
+<p>우리가 개발을하며 패키지매니저를 통해 라이브러리를 설치할 때는
+<code>package.json</code> 내의 <code>dependencies</code> 필드를 통해 의존성을 규정하는것으로 설치한다
+이때 해당 패키지의 이름과 버전범위를 지정한 객체를 통해 설치하는데
+버전의 범위는 하나 혹은 여러개의 공백으로 분리된 문자열이다.<br>
+<!-- -->버전범위를 지정하는 자세한 방법은 <a href="https://docs.npmjs.com/misc/semver" target="_blank" rel="noopener noreferrer">semver</a>를 참고</p>
+<p>만약 개발중에만 필요한 라이브러리일 경우 <code>devDependencies</code>필드를 활용하며</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">npm install some-package --save-dev</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>위와 같은 명령어로 설치 가능하고 패키지를 설치 후 <code>devDependencies</code>에 추가한다.<br>
+<!-- -->여기서 만약 내가 clone된 repository에서 <code>npm install</code>했을 경우 npm은 이를 프로젝트를<br>
+<!-- -->개발중이라고 인식하고 <code>devDependencies</code>에 추가하니 유의할 것.</p>
+<p>~~ peerdependencies</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="참고">참고<a href="https://wandered2la.com/blog/frontend-environment#%EC%B0%B8%EA%B3%A0" class="hash-link" aria-label="Direct link to 참고" title="Direct link to 참고">​</a></h2>
+<ul>
+<li><a href="https://programmingsummaries.tistory.com/385" target="_blank" rel="noopener noreferrer">package.json 번역</a></li>
+</ul>]]></content:encoded>
+            <category>frontend</category>
+            <category>environment</category>
+        </item>
         <item>
             <title><![CDATA[docusaurus custom plugin 만들기]]></title>
             <link>https://wandered2la.com/blog/docusaurus-plugin</link>
