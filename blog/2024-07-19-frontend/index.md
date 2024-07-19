@@ -106,7 +106,7 @@ yarn은 기존 node.js의 `require`함수를 덮어씌워 동작하며 효율적
    - cache miss 일경우 60 ~ 90초 가량 소요되던 시간을 의존성 복제만으로  
      바로 사용이 가능하여 시간절약
 
-## Transplier/Bundler
+## Bundler
 
 ## 참고
 
