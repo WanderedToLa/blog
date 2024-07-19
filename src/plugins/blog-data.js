@@ -25,20 +25,18 @@ async function createBlogDataPlugin(context, options) {
               posts.push({
                 slug: frontMatter.slug,
                 title: frontMatter.title,
-                date: new Date(dateStr), // Date 객체로 변환
+                date: new Date(dateStr),
               });
             }
           }
         }
       });
 
-      // 날짜를 기준으로 내림차순 정렬 (최신 날짜가 앞으로)
       posts.sort((a, b) => b.date - a.date);
 
-      // 상위 5개 포스트만 선택하고 날짜를 문자열로 변환
       return posts.slice(0, 5).map((post) => ({
         ...post,
-        date: post.date.toISOString().split('T')[0], // 'YYYY-MM-DD' 형식으로 변환
+        date: post.date.toISOString().split('T')[0],
       }));
     },
 
