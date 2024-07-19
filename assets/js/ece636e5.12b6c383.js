@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwanderedtola_blog=self.webpackChunkwanderedtola_blog||[]).push([[1932],{248:e=>{e.exports=JSON.parse('{"label":"dependencies","permalink":"/blog/tags/dependencies","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

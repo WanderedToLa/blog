@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwanderedtola_blog=self.webpackChunkwanderedtola_blog||[]).push([[6824],{164:a=>{a.exports=JSON.parse('{"label":"transplier","permalink":"/blog/tags/transplier","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
