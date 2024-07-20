@@ -108,6 +108,29 @@ yarn은 기존 node.js의 `require`함수를 덮어씌워 동작하며 효율적
 
 ## Bundler
 
+javascript에 모듈이라는 개념이 없던시절 규모가 큰 프로그램을 개발하기 위해 파일을 쪼개서 작업했지만  
+스크립트 태그를 통한 전역변수 참조를 했기때문에 함수나 변수의 이름 충돌 문제를 일으키고  
+규모가 커질수록 스크립트 로드시간이 증가하여 사용자 경험에 안좋은 영향을 끼쳤다.
+
+이러한 문제를 해결하기 위해 파일을 하나로 합치는 **번들링(Bundling)** 이라는 개념이 탄생하고  
+CommonJS의 `require`함수가 등장하며 이 시점부터 파일단위의 개발이 가능해지고 수천개의  
+JS파일로 분리하며 라이브러리의 쉬운 재사용성을 통해 더 나은 개발경험을 제공했다.
+
+모듈의 탄생과 함께 생겨난 번들러는 `CommonJS`이후에도 생겨난 모듈에 의해 설계의 영향을 미쳤고  
+지금 이시점에도 굉장히 다양한 번들러들이 있지만 번들러의 동작은 크게 세 가지로 구분한다.
+
+1. Resolution
+2. Load
+3. Optimization
+
+### Resolution
+
+resolution단계에서는 import/require되는 파일의 위치를 정확하게 찾는역할을 하는데 만약
+
+```tsx
+import { App } from './App';
+```
+
 ## 참고
 
 - [package.json 번역](https://programmingsummaries.tistory.com/385)
