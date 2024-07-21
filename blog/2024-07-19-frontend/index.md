@@ -125,11 +125,58 @@ JS파일로 분리하며 라이브러리의 쉬운 재사용성을 통해 더 �
 
 ### Resolution
 
-resolution단계에서는 import/require되는 파일의 위치를 정확하게 찾는역할을 하는데 만약
+resolution단계에서는 import/require되는 파일의 위치를 정확하게 찾는역할
 
 ```tsx
 import { App } from './App';
 ```
+
+App을 import 하는경우 `./App`의 정확한 경로를 탐색한다 (App.js, App.ts, App.tsx)  
+번들러에서는 이러한 설정을 기본제공하고 필요에따라 커스텀가능.  
+이렇게 정확한경로를 탐색하여 어떤파일들을 합쳐야 최종결과물이 되는지 알 수 있다.
+
+### Load
+
+Load단계에서는 표준 Javascript로 변환하는 역할을 하는데 현대의 웹 개발은  
+HTML,CSS,Javascript로만 개발하기엔 어려움이 있고 이를 보완하고자 슈퍼셋 언어들이 등장하였다.  
+이에 따라 대표적으로 Typescript와 같은언어를 사용하기위해 트랜스파일러가 등장하며  
+번들링과정에서 `Babel/SWC`같은 트랜스파일러를 수용하여 표준Javascript 이외에도 사용가능한  
+형태로 발전했다.
+
+여기서 트랜스파일러는 한 언어를 추상화단계가 비슷한 언어로 변환해주는 역할을하지만  
+언어 전체적으로 트랜스파일하지는 않는다. 문법의 문제가 아닌 언어의 표준이 변경되거나 새로추가되는  
+함수의 경우 `폴리필(polyfill)`과정을 거쳐야한다 구현이 누락된 새로운 기능을 메꿔주는(fill in)  
+역할을 하며 기능이나 사용자의 브라우저에 따라 다양하게 설정할 수 있다.
+
+### Optimization
+
+Resolution/Load 단계를 거쳐 완전한 JS파일 하나를 생성했다면 다양한 의존성을 사용하는  
+JS파일의 크기는 너무 크기 때문에 성능저하를 유발할 수 있다 따라서 파일 크기를 줄이기위해  
+두 가지 방법을 사용함
+
+1. Minification (Compression + Mangling)
+2. Tree Shaking
+
+**1-1. Minification - Compression 코드의 text를 최대한 압축**
+
+- undefined -> void 0
+- 2 + 3 -> 5
+- !a && !b -> !(a || b)
+- Infinity -> 1/0
+
+**1-2. Minification - Mangling 변수,Class,파일이름 최적화**
+
+```javascript
+// function add(num1, num2) { return num1 + num2 }
+function add(l, r) {
+  return l + r;
+}
+```
+
+**2. Tree Shaking 사용하지 않는 코드 제거**
+
+사용하지 않는 코드를 분석하고 제거하는 역할을 하는데 정적분석이 까다롭기 때문에  
+번들러에 따라 알고리즘 및 접근방식이 다르기 때문에 큰 차이가 날 수있다.
 
 ## 참고
 
