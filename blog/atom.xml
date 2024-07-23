@@ -8,15 +8,15 @@
     <subtitle>Wandered2LA Blog</subtitle>
     <icon>https://wandered2la.com/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[안전한 서비스를위한 환경구성 in frontend]]></title>
+        <title type="html"><![CDATA[환경구성 및 개발생산성 높이기 in frontend]]></title>
         <id>https://wandered2la.com/blog/frontend-environment</id>
         <link href="https://wandered2la.com/blog/frontend-environment"/>
         <updated>2024-07-19T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[얼마전 토스과제를 진행하며 알게된 점들은 매끄러운 사용자경험을 위해 frontend 로직뿐 아니라]]></summary>
-        <content type="html"><![CDATA[<p>얼마전 토스과제를 진행하며 알게된 점들은 매끄러운 사용자경험을 위해 frontend 로직뿐 아니라<br>
-<!-- -->보이지 않는 환경설정에도 엄청난 노력을 하고있음을 알게되었다. 이전에 개발을 하며<br>
-<!-- -->알고는 있지만 자세하게 몰랐던 부분과 그들의 디테일에 놀라워하며 면접준비를 했는데<br>
-<!-- -->이 글에서는 이 과정에서 알게된 사실들을 정리한다.</p>
+        <summary type="html"><![CDATA[얼마전 토스과제를 진행하며 알게된 점들은 매끄러운 사용자경험 및 개발 생산성을 위해]]></summary>
+        <content type="html"><![CDATA[<p>얼마전 토스과제를 진행하며 알게된 점들은 매끄러운 사용자경험 및 개발 생산성을 위해<br>
+<!-- -->frontend 로직뿐 아니라 보이지 않는 환경설정에도 엄청난 노력을 하고있음을 알게되었다.<br>
+<!-- -->이전에 개발을 하며 알고는 있지만 자세하게 몰랐던 부분과 그들의 디테일에<br>
+<!-- -->놀라워하며 면접준비를 했는데 이 글에서는 이 과정에서 알게된 사실들을 정리한다.</p>
 <div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>참고</div><div class="admonitionContent_BuS1"><p>Youtube 및 toss tech blog를 참고하여 작성한 글 입니다.</p></div></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="dependencies-in-packagejson">dependencies in Package.json<a href="https://wandered2la.com/blog/frontend-environment#dependencies-in-packagejson" class="hash-link" aria-label="Direct link to dependencies in Package.json" title="Direct link to dependencies in Package.json">​</a></h2>
 <p>우리가 개발을하며 패키지매니저를 통해 라이브러리를 설치할 때는
@@ -133,6 +133,9 @@ A를 사용하지 않음에도 peerDependencies에 추가해주어야 하며 이
 <p><strong>2. Tree Shaking 사용하지 않는 코드 제거</strong></p>
 <p>사용하지 않는 코드를 분석하고 제거하는 역할을 하는데 정적분석이 까다롭기 때문에<br>
 <!-- -->번들러에 따라 알고리즘 및 접근방식이 다르기 때문에 큰 차이가 날 수있다.</p>
+<p>토스에서는 위와 같은 번들러의 특성을 활용해 React Native의 Metro 에서<br>
+<!-- -->ESbuild로 옮기며 빌드속도를 최적화 했던 사례를 소개한다.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="git-분석-및-활용">Git 분석 및 활용<a href="https://wandered2la.com/blog/frontend-environment#git-%EB%B6%84%EC%84%9D-%EB%B0%8F-%ED%99%9C%EC%9A%A9" class="hash-link" aria-label="Direct link to Git 분석 및 활용" title="Direct link to Git 분석 및 활용">​</a></h2>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="참고">참고<a href="https://wandered2la.com/blog/frontend-environment#%EC%B0%B8%EA%B3%A0" class="hash-link" aria-label="Direct link to 참고" title="Direct link to 참고">​</a></h2>
 <ul>
 <li><a href="https://programmingsummaries.tistory.com/385" target="_blank" rel="noopener noreferrer">package.json 번역</a></li>
