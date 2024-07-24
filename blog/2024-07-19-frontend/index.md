@@ -183,6 +183,16 @@ ESbuild로 옮기며 빌드속도를 최적화 했던 사례를 소개한다.
 
 ## Git 분석 및 활용
 
+VCS중 하나인 Git은 새로 추가된 파일 혹은 변경된 파일의 내용들을 쉽게 추적하고 관리할 수 있는  
+도구이며 관리 할 폴더에서 `git init` 명령어를 통해 시작.
+
+1. Working Directory - 실제 작업공간
+2. Staging Area - 변경된 파일들의 대기공간
+3. Repository - 최종적으로 저장된 파일들의 공간
+
+우선 Git은 크게 세 가지 영역으로 분리되며 파일들의 변화를 gistory를 통해 분석하여 정리  
+ㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+
 ## 참고
 
 - [package.json 번역](https://programmingsummaries.tistory.com/385)
