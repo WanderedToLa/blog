@@ -29,3 +29,64 @@ Headless UI가 만능은 아니며 Component based 라이브러리와 비교하�
 - [Headless UI Library란](https://www.jbee.io/articles/react/Headless%20UI%20Library%EB%9E%80)
 
 ## Getting Started
+
+모노레포 관리 도구인 `nx`를 사용하며 `packages`폴더안에 다양한 프레임 워크에 맞는 table이 있음
+
+```
+packages
+├── angular-table
+├── lit-table
+├── match-sorter-utils
+├── qwik-table
+├── react-table
+├── react-table-devtools
+├── solid-table
+├── svelte-table
+├── table-core
+└── vue-table
+```
+
+그 중 table의 핵심 기능을 관리하는 `table-core` 패키지
+
+```
+table-core/src
+├── aggregationFns.ts
+├── columnHelper.ts
+├── core
+│   ├── cell.ts
+│   ├── column.ts
+│   ├── headers.ts
+│   ├── row.ts
+│   └── table.ts
+├── features
+│   ├── ColumnFaceting.ts
+│   ├── ColumnFiltering.ts
+│   ├── ColumnGrouping.ts
+│   ├── ColumnOrdering.ts
+│   ├── ColumnPinning.ts
+│   ├── ColumnSizing.ts
+│   ├── ColumnVisibility.ts
+│   ├── GlobalFaceting.ts
+│   ├── GlobalFiltering.ts
+│   ├── RowExpanding.ts
+│   ├── RowPagination.ts
+│   ├── RowPinning.ts
+│   ├── RowSelection.ts
+│   └── RowSorting.ts
+├── filterFns.ts
+├── index.ts
+├── sortingFns.ts
+├── types.ts
+├── utils
+│   ├── filterRowsUtils.ts
+│   ├── getCoreRowModel.ts
+│   ├── getExpandedRowModel.ts
+│   ├── getFacetedMinMaxValues.ts
+│   ├── getFacetedRowModel.ts
+│   ├── getFacetedUniqueValues.ts
+│   ├── getFilteredRowModel.ts
+│   ├── getGroupedRowModel.ts
+│   ├── getPaginationRowModel.ts
+│   └── getSortedRowModel.ts
+└── utils.ts
+```
