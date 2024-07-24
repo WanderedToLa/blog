@@ -7,4 +7,6 @@ help me remember important experiences and tips for myself.
 - Framework: [Docusaurus](https://docusaurus.io/)
 - Deployment: [Github Pages](https://pages.github.com/)
 
-test
+## TODO
+
+- [ ] comment (github)
