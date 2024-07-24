@@ -136,6 +136,15 @@ A를 사용하지 않음에도 peerDependencies에 추가해주어야 하며 이
 <p>토스에서는 위와 같은 번들러의 특성을 활용해 React Native의 Metro 에서<br>
 <!-- -->ESbuild로 옮기며 빌드속도를 최적화 했던 사례를 소개한다.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="git-분석-및-활용">Git 분석 및 활용<a href="https://wandered2la.com/blog/frontend-environment#git-%EB%B6%84%EC%84%9D-%EB%B0%8F-%ED%99%9C%EC%9A%A9" class="hash-link" aria-label="Direct link to Git 분석 및 활용" title="Direct link to Git 분석 및 활용">​</a></h2>
+<p>VCS중 하나인 Git은 새로 추가된 파일 혹은 변경된 파일의 내용들을 쉽게 추적하고 관리할 수 있는<br>
+<!-- -->도구이며 관리 할 폴더에서 <code>git init</code> 명령어를 통해 시작.</p>
+<ol>
+<li>Working Directory - 실제 작업공간</li>
+<li>Staging Area - 변경된 파일들의 대기공간</li>
+<li>Repository - 최종적으로 저장된 파일들의 공간</li>
+</ol>
+<p>우선 Git은 크게 세 가지 영역으로 분리되며 파일들의 변화를 gistory를 통해 분석하여 정리<br>
+<!-- -->ㅁㅁㅁㅁㅁㅁㅁㅁㅁ</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="참고">참고<a href="https://wandered2la.com/blog/frontend-environment#%EC%B0%B8%EA%B3%A0" class="hash-link" aria-label="Direct link to 참고" title="Direct link to 참고">​</a></h2>
 <ul>
 <li><a href="https://programmingsummaries.tistory.com/385" target="_blank" rel="noopener noreferrer">package.json 번역</a></li>
