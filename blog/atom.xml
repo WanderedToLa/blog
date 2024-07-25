@@ -108,11 +108,12 @@ A를 사용하지 않음에도 peerDependencies에 추가해주어야 하며 이
 <!-- -->HTML,CSS,Javascript로만 개발하기엔 어려움이 있고 이를 보완하고자 슈퍼셋 언어들이 등장하였다.<br>
 <!-- -->이에 따라 대표적으로 Typescript와 같은언어를 사용하기위해 트랜스파일러가 등장하며<br>
 <!-- -->번들링과정에서 <code>Babel/SWC</code>같은 트랜스파일러를 수용하여 표준Javascript 이외에도 사용가능한<br>
-<!-- -->형태로 발전했다.</p>
+<!-- -->형태로 발전해 트랜스파일링 과정을 거치는것이 Load단계에 해당함.</p>
 <p>여기서 트랜스파일러는 한 언어를 추상화단계가 비슷한 언어로 변환해주는 역할을하지만<br>
-<!-- -->언어 전체적으로 트랜스파일하지는 않는다. 문법의 문제가 아닌 언어의 표준이 변경되거나 새로추가되는<br>
-<!-- -->함수의 경우 <code>폴리필(polyfill)</code>과정을 거쳐야한다 구현이 누락된 새로운 기능을 메꿔주는(fill in)<br>
-<!-- -->역할을 하며 기능이나 사용자의 브라우저에 따라 다양하게 설정할 수 있다.</p>
+<!-- -->언어 전체적으로 트랜스파일하지는 않는다. 문법의 문제가 아닌 언어의 표준이 변경되거나<br>
+<!-- -->새로추가되는 함수의 경우 <code>폴리필(polyfill)</code>과정을 거쳐야한다 구현이 누락된<br>
+<!-- -->새로운 기능을 메꿔주는(fill in) 역할을 하며 기능이나 사용자의 브라우저에 따라<br>
+<!-- -->다양하게 설정할 수 있다.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="optimization">Optimization<a href="https://wandered2la.com/blog/frontend-environment#optimization" class="hash-link" aria-label="Direct link to Optimization" title="Direct link to Optimization">​</a></h3>
 <p>Resolution/Load 단계를 거쳐 완전한 JS파일 하나를 생성했다면 다양한 의존성을 사용하는<br>
 <!-- -->JS파일의 크기는 너무 크기 때문에 성능저하를 유발할 수 있다 따라서 파일 크기를 줄이기위해<br>
@@ -131,20 +132,31 @@ A를 사용하지 않음에도 peerDependencies에 추가해주어야 하며 이
 <p><strong>1-2. Minification - Mangling 변수,Class,파일이름 최적화</strong></p>
 <div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token comment" style="color:rgb(98, 114, 164)">// function add(num1, num2) { return num1 + num2 }</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token keyword" style="color:rgb(189, 147, 249);font-style:italic">function</span><span class="token plain"> </span><span class="token function" style="color:rgb(80, 250, 123)">add</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token parameter">l</span><span class="token parameter punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token parameter"> r</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token keyword control-flow" style="color:rgb(189, 147, 249);font-style:italic">return</span><span class="token plain"> l </span><span class="token operator">+</span><span class="token plain"> r</span><span class="token punctuation" style="color:rgb(248, 248, 242)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p><strong>2. Tree Shaking 사용하지 않는 코드 제거</strong></p>
-<p>사용하지 않는 코드를 분석하고 제거하는 역할을 하는데 정적분석이 까다롭기 때문에<br>
-<!-- -->번들러에 따라 알고리즘 및 접근방식이 다르기 때문에 큰 차이가 날 수있다.</p>
+<p>Tree Shaking 단계에서는 사용하지 않는 코드를 분석하고 제거하는 역할을 하는데<br>
+<!-- -->사용하지 않는 코드가 무엇인지 판별하는 일은 까다로운 편에 속한다(정적분석의 어려움)<br>
+<!-- -->따라서 번들러별로 알고리즘 및 접근방식이 천차만별이라 큰 차이가 있는 사항이기도 하다.</p>
 <p>토스에서는 위와 같은 번들러의 특성을 활용해 React Native의 Metro 에서<br>
-<!-- -->ESbuild로 옮기며 빌드속도를 최적화 했던 사례를 소개한다.</p>
+<!-- -->ESbuild로 옮기며 빌드속도를 최적화 했던 사례를 소개했다.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="git-분석-및-활용">Git 분석 및 활용<a href="https://wandered2la.com/blog/frontend-environment#git-%EB%B6%84%EC%84%9D-%EB%B0%8F-%ED%99%9C%EC%9A%A9" class="hash-link" aria-label="Direct link to Git 분석 및 활용" title="Direct link to Git 분석 및 활용">​</a></h2>
-<p>VCS중 하나인 Git은 새로 추가된 파일 혹은 변경된 파일의 내용들을 쉽게 추적하고 관리할 수 있는<br>
-<!-- -->도구이며 관리 할 폴더에서 <code>git init</code> 명령어를 통해 시작.</p>
+<p>VCS중 하나인 Git은 <strong>델타기반 버전관리 시스템</strong>으로 파일의 변화를 시간순으로 관리해<br>
+<!-- -->프로젝트의 스냅샷을 저장하고 파일간 변경사항을 <code>차이(diff)</code>/<code>델타(delta)</code> 형태로<br>
+<!-- -->저장하고 파일을 세 가지 상태인 <code>Committed</code>, <code>Modified</code>, <code>Staged</code> 관리하며<br>
+<!-- -->이 세 가지의 상태는 프로젝트의 세 가지 상태와 연관되어 있고 다음과 같다.</p>
 <ol>
 <li>Working Directory - 실제 작업공간</li>
 <li>Staging Area - 변경된 파일들의 대기공간</li>
-<li>Repository - 최종적으로 저장된 파일들의 공간</li>
+<li>Repository(.git directory) - 최종적으로 저장된 파일들의 공간</li>
 </ol>
-<p>우선 Git은 크게 세 가지 영역으로 분리되며 파일들의 변화를 gistory를 통해 분석하여 정리<br>
-<!-- -->ㅁㅁㅁㅁㅁㅁㅁㅁㅁ</p>
+<p>Git은 안전하고 일관된 파일관리를 위해 <code>sha-1</code> 해시알고리즘으로 40자길이의 16진수 문자열을<br>
+<!-- -->만들고 모든것을 해시로 식별하여 데이터의 무결성을 확인한다.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="git-basic">Git basic<a href="https://wandered2la.com/blog/frontend-environment#git-basic" class="hash-link" aria-label="Direct link to Git basic" title="Direct link to Git basic">​</a></h3>
+<p>git으로 버전관리를 시작하기 위해 본인의 작업폴더에서 <code>git init</code> 명령어를 실행하면<br>
+<code>.git</code>폴더가 생성되고 이곳에 파일들의 정보가 저장된다.<br>
+<!-- -->우리가 실제로 작업하는공간(Working Directory)의 파일은 Tracked와 Untracked로 나누며<br>
+<!-- -->Tracked파일의 경우 스냅샷에 포함돼 있던 파일로 <code>Unmodified</code>, <code>Modified</code>, <code>Staged</code> 상태중<br>
+<!-- -->하나이다.</p>
+<p><img loading="lazy" alt="git-status" src="https://wandered2la.com/assets/images/git-status-0c69ca9fd992f3efb893ab5a89f6d2a6.png" width="1065" height="627" class="img_ev3q"></p>
+<p><img loading="lazy" alt="git-add" src="https://wandered2la.com/assets/images/git-add-b3ba9ff3088ef52c696147b24dca6437.png" width="742" height="164" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="참고">참고<a href="https://wandered2la.com/blog/frontend-environment#%EC%B0%B8%EA%B3%A0" class="hash-link" aria-label="Direct link to 참고" title="Direct link to 참고">​</a></h2>
 <ul>
 <li><a href="https://programmingsummaries.tistory.com/385" target="_blank" rel="noopener noreferrer">package.json 번역</a></li>
@@ -156,6 +168,7 @@ A를 사용하지 않음에도 peerDependencies에 추가해주어야 하며 이
 <li><a href="https://www.youtube.com/watch?v=IKyA8BKxpXc" target="_blank" rel="noopener noreferrer">토스ㅣSLASH 22 - 잃어버린 유저의 시간을 찾아서 : 100년을 아껴준 SSR 이야기</a></li>
 <li><a href="https://medium.com/naver-place-dev/javascript-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%9D%98-%EC%9D%B4%ED%95%B4-1-javascript-%EB%AA%A8%EB%93%88-d68c7e438fcd" target="_blank" rel="noopener noreferrer">JavaScript 번들러의 이해</a></li>
 <li><a href="https://tech.wonderwall.kr/articles/git/" target="_blank" rel="noopener noreferrer">Git 내부 동작 파헤치기</a></li>
+<li><a href="https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EA%B8%B0%EC%B4%88" target="_blank" rel="noopener noreferrer">시작하기 - Git 기초</a></li>
 </ul>]]></content>
         <author>
             <name>WooSeok</name>
