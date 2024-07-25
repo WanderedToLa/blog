@@ -141,12 +141,13 @@ Load단계에서는 표준 Javascript로 변환하는 역할을 하는데 현대
 HTML,CSS,Javascript로만 개발하기엔 어려움이 있고 이를 보완하고자 슈퍼셋 언어들이 등장하였다.  
 이에 따라 대표적으로 Typescript와 같은언어를 사용하기위해 트랜스파일러가 등장하며  
 번들링과정에서 `Babel/SWC`같은 트랜스파일러를 수용하여 표준Javascript 이외에도 사용가능한  
-형태로 발전했다.
+형태로 발전해 트랜스파일링 과정을 거치는것이 Load단계에 해당함.
 
 여기서 트랜스파일러는 한 언어를 추상화단계가 비슷한 언어로 변환해주는 역할을하지만  
-언어 전체적으로 트랜스파일하지는 않는다. 문법의 문제가 아닌 언어의 표준이 변경되거나 새로추가되는  
-함수의 경우 `폴리필(polyfill)`과정을 거쳐야한다 구현이 누락된 새로운 기능을 메꿔주는(fill in)  
-역할을 하며 기능이나 사용자의 브라우저에 따라 다양하게 설정할 수 있다.
+언어 전체적으로 트랜스파일하지는 않는다. 문법의 문제가 아닌 언어의 표준이 변경되거나  
+새로추가되는 함수의 경우 `폴리필(polyfill)`과정을 거쳐야한다 구현이 누락된  
+새로운 기능을 메꿔주는(fill in) 역할을 하며 기능이나 사용자의 브라우저에 따라  
+다양하게 설정할 수 있다.
 
 ### Optimization
 
@@ -175,23 +176,38 @@ function add(l, r) {
 
 **2. Tree Shaking 사용하지 않는 코드 제거**
 
-사용하지 않는 코드를 분석하고 제거하는 역할을 하는데 정적분석이 까다롭기 때문에  
-번들러에 따라 알고리즘 및 접근방식이 다르기 때문에 큰 차이가 날 수있다.
+Tree Shaking 단계에서는 사용하지 않는 코드를 분석하고 제거하는 역할을 하는데  
+사용하지 않는 코드가 무엇인지 판별하는 일은 까다로운 편에 속한다(정적분석의 어려움)  
+따라서 번들러별로 알고리즘 및 접근방식이 천차만별이라 큰 차이가 있는 사항이기도 하다.
 
 토스에서는 위와 같은 번들러의 특성을 활용해 React Native의 Metro 에서  
-ESbuild로 옮기며 빌드속도를 최적화 했던 사례를 소개한다.
+ESbuild로 옮기며 빌드속도를 최적화 했던 사례를 소개했다.
 
 ## Git 분석 및 활용
 
-VCS중 하나인 Git은 새로 추가된 파일 혹은 변경된 파일의 내용들을 쉽게 추적하고 관리할 수 있는  
-도구이며 관리 할 폴더에서 `git init` 명령어를 통해 시작.
+VCS중 하나인 Git은 **델타기반 버전관리 시스템**으로 파일의 변화를 시간순으로 관리해  
+프로젝트의 스냅샷을 저장하고 파일간 변경사항을 `차이(diff)`/`델타(delta)` 형태로  
+저장하고 파일을 세 가지 상태인 `Committed`, `Modified`, `Staged` 관리하며  
+이 세 가지의 상태는 프로젝트의 세 가지 상태와 연관되어 있고 다음과 같다.
 
 1. Working Directory - 실제 작업공간
 2. Staging Area - 변경된 파일들의 대기공간
-3. Repository - 최종적으로 저장된 파일들의 공간
+3. Repository(.git directory) - 최종적으로 저장된 파일들의 공간
 
-우선 Git은 크게 세 가지 영역으로 분리되며 파일들의 변화를 gistory를 통해 분석하여 정리  
-ㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+Git은 안전하고 일관된 파일관리를 위해 `sha-1` 해시알고리즘으로 40자길이의 16진수 문자열을  
+만들고 모든것을 해시로 식별하여 데이터의 무결성을 확인한다.
+
+### Git basic
+
+git으로 버전관리를 시작하기 위해 본인의 작업폴더에서 `git init` 명령어를 실행하면  
+`.git`폴더가 생성되고 이곳에 파일들의 정보가 저장된다.  
+우리가 실제로 작업하는공간(Working Directory)의 파일은 Tracked와 Untracked로 나누며  
+Tracked파일의 경우 스냅샷에 포함돼 있던 파일로 `Unmodified`, `Modified`, `Staged` 상태중  
+하나이다.
+
+![git-status](../../static/img/git-status.png)
+
+![git-add](../../static/img/git-add.png)
 
 ## 참고
 
@@ -204,3 +220,4 @@ VCS중 하나인 Git은 새로 추가된 파일 혹은 변경된 파일의 내�
 - [토스ㅣSLASH 22 - 잃어버린 유저의 시간을 찾아서 : 100년을 아껴준 SSR 이야기](https://www.youtube.com/watch?v=IKyA8BKxpXc)
 - [JavaScript 번들러의 이해](https://medium.com/naver-place-dev/javascript-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%9D%98-%EC%9D%B4%ED%95%B4-1-javascript-%EB%AA%A8%EB%93%88-d68c7e438fcd)
 - [Git 내부 동작 파헤치기](https://tech.wonderwall.kr/articles/git/)
+- [시작하기 - Git 기초](https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EA%B8%B0%EC%B4%88)
